@@ -10,17 +10,18 @@ window.addEventListener('load', () => {
     '#606bd3',
     '#60c2d3',
   ];
+  console.log(sounds);
 
   pads.forEach((pad, index) => {
     pad.addEventListener('click', function () {
       sounds[index].currentTime = 0;
       sounds[index].play();
       createBubble(index);
+      cons;
     });
   });
 
   const createBubble = (index) => {
-    //Create bubbles
     const bubble = document.createElement('div');
     visual.appendChild(bubble);
     bubble.style.backgroundColor = colors[index];
