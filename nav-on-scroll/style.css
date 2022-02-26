@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 24px;
@@ -27,7 +28,7 @@ section {
   background-color: aquamarine;
 }
 
-#porn {
+#info {
   background-color: crimson;
 }
 
@@ -44,26 +45,25 @@ nav .container {
   padding: 10px;
 }
 
-/*nav.container ul {
-  list-style: none;
-/* } */
+nav .container ul {
+  list-style-type: style none;
+}
 
-nav.container ul li {
+nav .container ul li {
   display: inline-block;
-} /* its not working should be horizontal but aint*/
-
-nav.container ul li a {
+}
+nav .container ul li a {
   display: inline-block;
   padding: 10px 20px;
   color: black;
   text-decoration: none;
 }
 
-nav.container ul li.active a {
-  background-color: white;
+nav .container ul li.active a {
+  background-color: red;
   transition: 0.3 ease background-color;
 }
 
-nav.container ul li.active a {
+nav .container ul li.active a {
   color: white;
 }
