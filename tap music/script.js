@@ -17,7 +17,8 @@ window.addEventListener('load', () => {
       sounds[index].currentTime = 0;
       sounds[index].play();
       createBubble(index);
-      cons;
+      //cons;
+      console.log(pad, index);
     });
   });
 
