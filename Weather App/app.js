@@ -7,13 +7,20 @@ let weather={
         + "&units=metric&appid="
         + this.apiKey
         )
-        .then((response)=> response.json())
-        .then((data)=> this.displayWeather(data));
+        .then((response)=>response.json())
+      
+        .then((data)=> {
+          console.log(data);
+          this.displayWeather(data)});
+        console.log("weather");
 
     },
 displayWeather: function(data){
+  console.log("data", data);
+
     const { name }= data;
-    const{ icon,description }= data.weather[0];
+    const{ icon,description }= data?.weather?.[0];
+    
     const{temp, humidity} = data.main;
     const {speed}= data.wind;
     console.log(name,icon, description, temp, humidity,speed);
@@ -51,5 +58,5 @@ document
     }
   });
 
-weather.fetchWeather("");
+weather.fetchWeather("Denver");
 
